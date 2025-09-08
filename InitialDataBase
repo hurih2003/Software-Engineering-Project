@@ -1,0 +1,38 @@
+USE QrAttendance
+CREATE TABLE Users (
+    user_id INT IDENTITY(1,1) PRIMARY KEY,
+    full_name NVARCHAR(100) NOT NULL,
+    role NVARCHAR(20) NOT NULL CHECK (role IN ('student', 'teacher', 'admin')),
+    qr_code NVARCHAR(255) UNIQUE NOT NULL,
+); 
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY FOREIGN KEY REFERENCES Users(user_id),
+    class NVARCHAR(50) NOT NULL,
+    guardian_contact NVARCHAR(50)
+);
+CREATE TABLE Teachers (
+    teacher_id INT PRIMARY KEY FOREIGN KEY REFERENCES Users(user_id),
+    subject NVARCHAR(50),
+    class_assigned NVARCHAR(50) 
+);
+CREATE TABLE Attendance (
+    attendance_id INT IDENTITY(1,1) PRIMARY KEY,
+    user_id INT FOREIGN KEY REFERENCES Users(user_id),
+    attendance_date DATE NOT NULL DEFAULT CAST(GETDATE() AS DATE),
+    status NVARCHAR(10) NOT NULL CHECK (status IN ('Present', 'Absent'))
+);
+CREATE TABLE Warnings (
+    warning_id INT IDENTITY(1,1) PRIMARY KEY,
+    student_id INT FOREIGN KEY REFERENCES Students(student_id),
+    warning_date DATETIME DEFAULT GETDATE(),
+    reason NVARCHAR(255)
+);
+CREATE TABLE guardians (
+  id INT IDENTITY(1,1) PRIMARY KEY,
+  student_id INT NOT NULL,
+  name VARCHAR(100) NOT NULL,
+  phone VARCHAR(20),
+  email VARCHAR(100),
+  FOREIGN KEY (student_id) REFERENCES Users(user_id)
+);
+ 
