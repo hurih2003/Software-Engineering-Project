@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" blendMode="ADD" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #eae0cd;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qr_attendance_manager.LoginCotroller">
+    <stylesheets>
+        <URL value="@checktype.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="97.0" layoutY="83.0" text="UserName" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="AGA Arabesque" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="139.0" text="Password" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="AGA Arabesque" size="23.0" />
+         </font>
+      </Label>
+      <TextField layoutX="263.0" layoutY="88.0" prefHeight="26.0" prefWidth="284.0" promptText="UserName">
+         <font>
+            <Font name="Arial Unicode MS" size="12.0" />
+         </font>
+      </TextField>
+      <PasswordField layoutX="263.0" layoutY="143.0" prefHeight="26.0" prefWidth="284.0" promptText="Password" />
+      <Button layoutX="480.0" layoutY="200.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="62.0" text="Login">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

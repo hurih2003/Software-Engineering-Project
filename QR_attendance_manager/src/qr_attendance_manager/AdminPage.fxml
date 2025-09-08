@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="qr_attendance_manager.AdminPageController">
+    <stylesheets>
+        <URL value="@adminpage.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="238.0" layoutY="164.0" mnemonicParsing="false" text="View Reports" />
+      <Button layoutX="233.0" layoutY="213.0" mnemonicParsing="false" text="Export Reports" />
+      <Button layoutX="245.0" layoutY="263.0" mnemonicParsing="false" text="Warnings " />
+      <Label layoutX="202.0" layoutY="22.0" text="Admin Dashboard">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="241.0" layoutY="115.0" mnemonicParsing="false" text="Manage QR" />
+      <Button layoutX="237.0" layoutY="70.0" mnemonicParsing="false" text="Manage Accounts" />
+   </children>
+</AnchorPane>
