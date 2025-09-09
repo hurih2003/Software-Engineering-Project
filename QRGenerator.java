@@ -1,30 +1,37 @@
-package qrgenerator;
+package qrattendance;
 import com.google.zxing.BarcodeFormat;
-import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.WriterException;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
+import com.google.zxing.qrcode.QRCodeWriter;
+import java.io.File;
+import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
+import java.util.Scanner;
 public class QRGenerator {
-    public static void main(String[] args) {
-        // بيانات الطالب
-        String studentName = "Ahmed Ali";
-        String studentID = "20251001";
-        // دمج البيانات لتوليد QR
-        String data = "Name: " + studentName + ", ID: " + studentID;
-        // مسار حفظ الصورة
-        String filePath = "studentQR.png";
-        // إعدادات QR
-        int width = 300;
-        int height = 300;
+    // Generate QR Code for a given student ID
+    public static void generateQRCode(String studentId, String filePath, int width, int height) {
+        QRCodeWriter qrCodeWriter = new QRCodeWriter();
         try {
-            BitMatrix matrix = new MultiFormatWriter().encode(data, BarcodeFormat.QR_CODE, width, height);
+            BitMatrix bitMatrix = qrCodeWriter.encode(studentId, BarcodeFormat.QR_CODE, width, height);
             Path path = FileSystems.getDefault().getPath(filePath);
-            MatrixToImageWriter.writeToPath(matrix, "PNG", path);
-            System.out.println("QR Code generated and saved to: " + filePath);
-        } catch (Exception e) {
-            e.printStackTrace();
+            MatrixToImageWriter.writeToPath(bitMatrix, "PNG", path);
+            System.out.println("QR Code generated for Student ID: " + studentId);
+        } catch (WriterException | IOException e) {
         }
     }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        File directory = new File("qr_codes");
+        if (!directory.exists()) {
+        directory.mkdir();
+        }
+        System.out.print("Enter Student ID: ");
+        String studentId = scanner.nextLine();
+        String filePath = "qr_codes/student_" + studentId + ".png";
+        generateQRCode(studentId, filePath, 300, 300);
+    }
 }
+
 
