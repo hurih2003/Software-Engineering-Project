@@ -1,4 +1,4 @@
-Use QrAttendence
+Use QrAttendence2
 CREATE TABLE Users (
     user_id INT PRIMARY KEY IDENTITY(1,1),
     full_name NVARCHAR(100) NOT NULL,
@@ -51,4 +51,15 @@ CREATE TABLE Guardians (
     FOREIGN KEY (student_id) REFERENCES Students(student_id) ON DELETE CASCADE
 );
 
- 
+ CREATE TABLE Classes (
+    class_id INT PRIMARY KEY IDENTITY(1,1),
+    class_name NVARCHAR(50) NOT NULL UNIQUE,   -- e.g., "Grade 5 - A"
+    section NVARCHAR(20) NULL,                -- optional, if you want sections
+    teacher_id INT NULL,                      -- optional homeroom/class teacher
+    FOREIGN KEY (teacher_id) REFERENCES Teachers(teacher_id) ON DELETE SET NULL
+);
+ALTER TABLE Students
+DROP COLUMN class;  
+
+ALTER TABLE Students
+ADD class_id INT FOREIGN KEY REFERENCES Classes(class_id) ON DELETE SET NULL;
