@@ -67,3 +67,7 @@ ADD class_id INT FOREIGN KEY REFERENCES Classes(class_id) ON DELETE SET NULL;
 ALTER TABLE Teachers
 ADD status NVARCHAR(10) CHECK (status IN ('Present','Absent')) DEFAULT 'Present';
 
+ALTER TABLE Students
+ADD warnings INT DEFAULT 0;
+
+
