@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qr_attendance_manager.View_reportsController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="qr_attendance_manager.View_reportsController">
     <stylesheets>
-        <URL value="@view_reports.css"/>
+        <URL value="@view_reports.css" />
     </stylesheets>
+   <children>
+      <Label layoutX="231.0" layoutY="14.0" text="View Reports">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="14.0" layoutY="63.0" prefHeight="35.0" prefWidth="114.0" promptText="From:" />
+      <DatePicker layoutX="137.0" layoutY="63.0" prefHeight="35.0" prefWidth="114.0" promptText="To:" />
+      <ComboBox layoutX="259.0" layoutY="63.0" prefHeight="35.0" prefWidth="114.0" promptText=" Class:" />
+      <ComboBox layoutX="381.0" layoutY="63.0" prefHeight="35.0" prefWidth="114.0" promptText="Student" />
+      <Button layoutX="505.0" layoutY="68.0" mnemonicParsing="false" text="view_reports" />
+      <TreeTableView layoutX="14.0" layoutY="117.0" prefHeight="200.0" prefWidth="558.0">
+        <columns>
+          <TreeTableColumn prefWidth="152.7999849319458" text="Date" />
+          <TreeTableColumn prefWidth="152.0000457763672" text="Full Name " />
+            <TreeTableColumn prefWidth="124.800048828125" text="Class" />
+            <TreeTableColumn prefWidth="130.4000244140625" text="Status" />
+        </columns>
+      </TreeTableView>
+      <Button layoutX="71.0" layoutY="327.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="56.0" text="Refresh" />
+      <Button layoutX="150.0" layoutY="327.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="56.0" text="Export" />
+   </children>
 </AnchorPane>

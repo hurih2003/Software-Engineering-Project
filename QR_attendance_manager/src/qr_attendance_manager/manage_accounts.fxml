@@ -9,12 +9,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="qr_attendance_manager.Manage_accountsController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qr_attendance_manager.Manage_accountsController">
     <stylesheets>
         <URL value="@manage_accounts.css" />
     </stylesheets>
    <children>
-      <Label layoutX="204.0" layoutY="20.0" text="Manage Accounts">
+      <Label layoutX="199.0" layoutY="21.0" text="Manage Accounts">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
@@ -33,8 +33,9 @@
          </font>
       </Label>
       <TextField layoutX="84.0" layoutY="68.0" promptText="use the username" />
-      <Button layoutX="457.0" layoutY="111.0" mnemonicParsing="false" text="Add Account" />
-      <Button layoutX="457.0" layoutY="163.0" mnemonicParsing="false" text="Edit Account" />
-      <Button layoutX="457.0" layoutY="217.0" mnemonicParsing="false" text="Delete Account" />
+      <Button layoutX="457.0" layoutY="111.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" text="Add Account" />
+      <Button layoutX="457.0" layoutY="163.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" text="Edit Account" />
+      <Button layoutX="457.0" layoutY="216.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" text="Delete Account" />
+      <Button layoutX="457.0" layoutY="267.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" text="Refresh" />
    </children>
 </AnchorPane>

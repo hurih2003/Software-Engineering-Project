@@ -6,20 +6,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="qr_attendance_manager.AdminPageController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qr_attendance_manager.AdminPageController">
     <stylesheets>
         <URL value="@adminpage.css" />
     </stylesheets>
    <children>
-      <Button layoutX="238.0" layoutY="164.0" mnemonicParsing="false" text="View Reports" />
-      <Button layoutX="233.0" layoutY="213.0" mnemonicParsing="false" text="Export Reports" />
-      <Button layoutX="245.0" layoutY="263.0" mnemonicParsing="false" text="Warnings " />
+      <Button layoutX="237.0" layoutY="165.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="111.0" text="View Reports" />
+      <Button layoutX="237.0" layoutY="215.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="111.0" text="Warnings " />
       <Label layoutX="202.0" layoutY="22.0" text="Admin Dashboard">
          <font>
             <Font name="System Bold Italic" size="23.0" />
          </font>
       </Label>
-      <Button layoutX="241.0" layoutY="115.0" mnemonicParsing="false" text="Manage QR" />
-      <Button layoutX="237.0" layoutY="70.0" mnemonicParsing="false" text="Manage Accounts" />
+      <Button layoutX="237.0" layoutY="115.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="111.0" text="Manage QR" />
+      <Button layoutX="237.0" layoutY="70.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="111.0" text="Manage Accounts" />
    </children>
 </AnchorPane>
