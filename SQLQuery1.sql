@@ -85,5 +85,12 @@ ALTER TABLE Users
 ADD username VARCHAR(100) UNIQUE NOT NULL,
     password_hash VARCHAR(255) NOT NULL;
 
+ALTER TABLE Users
+ALTER COLUMN username VARCHAR(100) NOT NULL;
+
+ALTER TABLE Users
+ALTER COLUMN password_hash VARCHAR(255) NOT NULL;
+-- I don't understand the difference between them 
+
 
 
