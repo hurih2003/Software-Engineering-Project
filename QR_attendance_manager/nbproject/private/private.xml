@@ -3,13 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/MS/OneDrive/المستندات/NetBeansProjects/QR_attendance_manager/src/qr_attendance_manager/Main.java</file>
-            <file>file:/C:/Users/MS/OneDrive/المستندات/NetBeansProjects/QR_attendance_manager/src/qr_attendance_manager/StudantPageController.java</file>
-            <file>file:/C:/Users/MS/OneDrive/المستندات/NetBeansProjects/QR_attendance_manager/src/qr_attendance_manager/LoginCotroller.java</file>
-            <file>file:/C:/Users/MS/OneDrive/المستندات/NetBeansProjects/QR_attendance_manager/src/qr_attendance_manager/LoginPage.css</file>
-            <file>file:/C:/Users/MS/OneDrive/المستندات/NetBeansProjects/QR_attendance_manager/src/qr_attendance_manager/studantpage.css</file>
-            <file>file:/C:/Users/MS/OneDrive/المستندات/NetBeansProjects/QR_attendance_manager/src/qr_attendance_manager/StudantPage.fxml</file>
-            <file>file:/C:/Users/MS/OneDrive/المستندات/NetBeansProjects/QR_attendance_manager/src/qr_attendance_manager/login_page.fxml</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/Manage_accountsController.java</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/StaffPageController.java</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/warnings.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/LoginPage.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/AdminPage.fxml</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/LoginCotroller.java</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/view_reports.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/login_page.fxml</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/adminpage.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/manage_accounts.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/manage_qr.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/manage_qr.fxml</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/manage_accounts.fxml</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/Manage_qrController.java</file>
         </group>
     </open-files>
 </project-private>

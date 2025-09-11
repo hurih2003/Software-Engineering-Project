@@ -9,33 +9,33 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qr_attendance_manager.Manage_accountsController">
+<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="659.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qr_attendance_manager.Manage_accountsController">
     <stylesheets>
         <URL value="@manage_accounts.css" />
     </stylesheets>
    <children>
-      <Label layoutX="199.0" layoutY="21.0" text="Manage Accounts">
+      <Label layoutX="205.0" layoutY="14.0" text="Manage Accounts">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TreeTableView layoutX="10.0" layoutY="98.0" prefHeight="275.0" prefWidth="430.0">
+      <TreeTableView layoutX="11.0" layoutY="118.0" prefHeight="293.0" prefWidth="474.0">
         <columns>
           <TreeTableColumn prefWidth="54.4000244140625" text="ID" />
           <TreeTableColumn prefWidth="144.79998779296875" text="Name" />
-            <TreeTableColumn prefWidth="121.5999755859375" text="Role" />
-            <TreeTableColumn prefWidth="112.0" text="Username" />
+            <TreeTableColumn prefWidth="117.5999755859375" text="Role" />
+            <TreeTableColumn prefWidth="109.60003662109375" text="Username" />
         </columns>
       </TreeTableView>
-      <Label layoutX="14.0" layoutY="70.0" text="search   :">
+      <Label layoutX="11.0" layoutY="72.0" text="Search :">
          <font>
-            <Font size="15.0" />
+            <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="84.0" layoutY="68.0" promptText="use the username" />
-      <Button layoutX="457.0" layoutY="111.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" text="Add Account" />
-      <Button layoutX="457.0" layoutY="163.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" text="Edit Account" />
-      <Button layoutX="457.0" layoutY="216.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" text="Delete Account" />
-      <Button layoutX="457.0" layoutY="267.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" text="Refresh" />
+      <TextField layoutX="91.0" layoutY="66.0" promptText="use the username" />
+      <Button layoutX="499.0" layoutY="151.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" text="Add Account" />
+      <Button layoutX="499.0" layoutY="207.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" text="Edit Account" />
+      <Button layoutX="499.0" layoutY="263.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" text="Delete Account" />
+      <Button layoutX="499.0" layoutY="326.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" text="Refresh" />
    </children>
 </AnchorPane>

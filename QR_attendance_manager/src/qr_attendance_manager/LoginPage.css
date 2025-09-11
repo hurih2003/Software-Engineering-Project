@@ -1,7 +1,62 @@
-/*
- * Empty Stylesheet file.
- */
-
 .mainFxmlClass {
+    -fx-background-color: #cfc2c2; 
+    -fx-border-color: #c7a35a;
+    -fx-border-width: 4px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 14px;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
 
+.text {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #204e96;
+    -fx-effect: dropshadow(gaussian, rgba(32,78,150,0.20), 3, 0, 0, 2);
+    -fx-stroke: #1a237e;
+    -fx-stroke-width: 0.8;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #143c74;
+    -fx-font-family: "AGA Arabesque", "Segoe UI", Arial, sans-serif;
+    -fx-effect: dropshadow(gaussian, rgba(32,78,150,0.13), 1,0,0,1);
+}
+
+.text-field,
+.password-field {
+    -fx-background-color: #f5fafd;
+    -fx-border-color: #7fa4e6;
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    -fx-padding: 7 16 7 16;
+    -fx-font-size: 16px;
+    -fx-text-fill: #143c74;
+    -fx-effect: dropshadow(gaussian, rgba(70,140,239,0.06), 1,0,0,1);
+    -fx-font-family: "Arial Unicode MS", Arial, sans-serif;
+}
+
+.button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white; 
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0;
+    -fx-font-size: 20px;
+    -fx-font-family: "Bell MT", Arial, sans-serif;
+    -fx-font-weight: bold;
+    -fx-padding: 12 0 12 0;
+    -fx-effect: dropshadow(gaussian, rgba(37,99,235,0.15), 5,0,0,2);
+    -fx-cursor: hand;
+    -fx-min-width: 110px;
+}
+
+.button:hover, .button:focused {
+    -fx-background-color: #174ea6;
+}
+
+.button:hover, .button:focused {
+    -fx-background-color: #174ea6;
 }

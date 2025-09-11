@@ -1,7 +1,62 @@
-/*
- * Empty Stylesheet file.
- */
+.stack-pane {
+    -fx-background-color: #d9eaff; 
+    -fx-padding: 40px 0;
+}
+.card-lg {
+    -fx-background-color: white;
+    -fx-padding: 30px 20px;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.15) , 8, 0.5 , 0 , 1 );
+    -fx-alignment: center;
+}
 
-.mainFxmlClass {
 
+.title {
+    -fx-font-weight: bold;
+    -fx-text-fill: #0d3a81; 
+    -fx-font-size: 28px;
+    -fx-effect: dropshadow( gaussian , rgba(13, 58, 129, 0.75) , 4, 0.7 , 0 , 2 );
+}
+
+
+.subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+}
+
+.btn-primary {
+    -fx-background-radius: 8;
+    -fx-background-color: linear-gradient(to bottom, #6a95ff, #4178d6);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow( gaussian , rgba(0, 0, 0, 0.2), 3, 0.4 , 0 , 1 );
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+
+.btn-primary:hover {
+    -fx-background-color: linear-gradient(to bottom, #4178d6, #6a95ff);
+}
+
+.btn-outline {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4178d6;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-border-radius: 8;
+    -fx-border-color: #4178d6;
+    -fx-border-width: 2;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(65, 120, 214, 0.4), 2, 0.3 , 0 , 1 );
+}
+
+
+.btn-outline:hover {
+    -fx-background-color: #4178d6;
+    -fx-text-fill: white;
 }

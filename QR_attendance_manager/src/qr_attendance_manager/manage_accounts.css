@@ -1,7 +1,81 @@
-/*
- * Empty Stylesheet file.
- */
 
 .mainFxmlClass {
+    -fx-background-color: #ffffff;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
 
+
+.label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #204e96;
+    -fx-effect: dropshadow(gaussian, rgba(32,78,150,0.18), 2,0,0,2);
+}
+
+.label:odd {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333b4f;
+    -fx-font-weight: bold;
+}
+
+.text-field,
+.combo-box,
+.date-picker {
+    -fx-background-color: #f8fafd;
+    -fx-border-color: #7fa4e6;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+    -fx-font-size: 15px;
+    -fx-padding: 8 14 8 14;
+    -fx-text-fill: #2d3a4b;
+}
+
+.tree-table-view {
+    -fx-background-color: #f8fafd;
+    -fx-border-color: #7fa4e6;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 4 4 4 4;
+    -fx-table-cell-border-color: #b9d3f5;
+    -fx-font-size: 16px;
+}
+.tree-table-view .column-header-background {
+    -fx-background-color: #e4eeff;
+    -fx-background-radius: 10 10 0 0;
+}
+.tree-table-view .tree-table-row-cell {
+    -fx-background-color: #f8fafd;
+}
+.tree-table-view .tree-table-cell {
+    -fx-font-weight: bold;
+    -fx-padding: 10 10 10 10;
+}
+.tree-table-view .placeholder .label {
+    -fx-font-size: 22px;
+    -fx-text-fill: #204e96;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(32,78,150,0.15), 2,0,0,3);
+}
+
+.button {
+    -fx-background-color: #468cef;
+    -fx-text-fill: #fff;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 8 0 8 0;
+    -fx-effect: dropshadow(gaussian, rgba(70,140,239,0.15), 6,0,0,2);
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-min-width: 120px;
+    -fx-min-height: 38px;
+    -fx-max-width: 160px;
+    -fx-transition: background-color 0.2s;
+    -fx-spacing: 6;
+}
+.button:pressed,
+.button:hover {
+    -fx-background-color: #2366c8;
 }

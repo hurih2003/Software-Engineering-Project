@@ -1,7 +1,80 @@
-/*
- * Empty Stylesheet file.
- */
 
 .mainFxmlClass {
+    -fx-background-color: #FFFFFF; 
+    -fx-padding: 20px;
+    -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
+
+.label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #0d3a81; 
+    -fx-font-size: 22px;
+    -fx-effect: dropshadow( gaussian , rgba(13, 58, 129, 0.75) , 4, 0.7 , 0 , 2 );
+}
+
+.date-picker, .combo-box {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #8ab6f9;
+    -fx-border-width: 1.5px;
+    -fx-padding: 4 10 4 10;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -40%);
+    -fx-background-color: #fff;
+}
+
+.button {
+    -fx-background-radius: 6;
+    -fx-background-color: linear-gradient(#6a95ff, #4178d6);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0.5, 0, 1);
+    -fx-padding: 8 15 8 15;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#4178d6, #6a95ff);
+}
+
+
+.tree-table-view {
+    -fx-border-color: #8ab6f9;
+    -fx-border-width: 1.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+
+.tree-table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #4178d6, #2a5bb8);
+}
+
+.tree-table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+
+.tree-table-view .sort-arrow {
+    -fx-background-color: transparent;
+    -fx-shape: "M 0 0 L 6 6 L 12 0 Z"; 
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-fill: #6a95ff;
+}
+
+
+.tree-table-view .cell {
+    -fx-font-size: 13px;
+    -fx-padding: 5 8 5 8;
+}
+
+
+.tree-table-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
 }

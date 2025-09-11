@@ -10,30 +10,30 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="qr_attendance_manager.View_reportsController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qr_attendance_manager.View_reportsController">
     <stylesheets>
         <URL value="@view_reports.css" />
     </stylesheets>
    <children>
-      <Label layoutX="231.0" layoutY="14.0" text="View Reports">
+      <Label layoutX="231.0" layoutY="14.0" stylesheets="@view_reports.css" text="View Reports">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <DatePicker layoutX="14.0" layoutY="63.0" prefHeight="35.0" prefWidth="114.0" promptText="From:" />
-      <DatePicker layoutX="137.0" layoutY="63.0" prefHeight="35.0" prefWidth="114.0" promptText="To:" />
+      <DatePicker layoutX="14.0" layoutY="63.0" prefHeight="35.0" prefWidth="114.0" promptText="From:" stylesheets="@view_reports.css" />
+      <DatePicker layoutX="137.0" layoutY="63.0" prefHeight="35.0" prefWidth="114.0" promptText="To:" stylesheets="@view_reports.css" />
       <ComboBox layoutX="259.0" layoutY="63.0" prefHeight="35.0" prefWidth="114.0" promptText=" Class:" />
-      <ComboBox layoutX="381.0" layoutY="63.0" prefHeight="35.0" prefWidth="114.0" promptText="Student" />
-      <Button layoutX="505.0" layoutY="68.0" mnemonicParsing="false" text="view_reports" />
-      <TreeTableView layoutX="14.0" layoutY="117.0" prefHeight="200.0" prefWidth="558.0">
+      <ComboBox layoutX="391.0" layoutY="63.0" prefHeight="39.0" prefWidth="126.0" promptText="Student" />
+      <Button layoutX="536.0" layoutY="65.0" mnemonicParsing="false" stylesheets="@view_reports.css" text="view_reports" />
+      <TreeTableView layoutX="47.0" layoutY="119.0" prefHeight="198.0" prefWidth="546.0">
         <columns>
           <TreeTableColumn prefWidth="152.7999849319458" text="Date" />
           <TreeTableColumn prefWidth="152.0000457763672" text="Full Name " />
             <TreeTableColumn prefWidth="124.800048828125" text="Class" />
-            <TreeTableColumn prefWidth="130.4000244140625" text="Status" />
+            <TreeTableColumn prefWidth="112.79999389648435" text="Status" />
         </columns>
       </TreeTableView>
-      <Button layoutX="71.0" layoutY="327.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="56.0" text="Refresh" />
-      <Button layoutX="150.0" layoutY="327.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="56.0" text="Export" />
+      <Button layoutX="71.0" layoutY="327.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="94.0" stylesheets="@view_reports.css" text="Refresh" />
+      <Button layoutX="187.0" layoutY="327.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="88.0" text="Export" />
    </children>
 </AnchorPane>

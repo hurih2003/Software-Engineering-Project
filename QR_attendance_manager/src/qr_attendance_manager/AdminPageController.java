@@ -1,26 +1,31 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
 package qr_attendance_manager;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
 
-/**
- * FXML Controller class
- *
- * @author MS
- */
-public class AdminPageController implements Initializable {
+public class AdminPageController {
 
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
+    @FXML
+    private void openManageAccounts(ActionEvent event) {
+        // TODO: افتحي واجهة Manage Accounts
+        System.out.println("Manage Accounts button clicked!");
+    }
+
+    @FXML
+    private void openManageQr(ActionEvent event) {
+        // TODO: افتحي واجهة Manage QR
+        System.out.println("Manage QR button clicked!");
+    }
+
+    @FXML
+    private void openReports(ActionEvent event) {
+        // TODO: افتحي واجهة View Reports
+        System.out.println("View Reports button clicked!");
+    }
+
+    @FXML
+    private void openWarnings(ActionEvent event) {
+        // TODO: افتحي واجهة Warnings
+        System.out.println("Warnings button clicked!");
+    }
 }
