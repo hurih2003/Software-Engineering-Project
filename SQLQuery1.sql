@@ -70,4 +70,20 @@ ADD status NVARCHAR(10) CHECK (status IN ('Present','Absent')) DEFAULT 'Present'
 ALTER TABLE Students
 ADD warnings INT DEFAULT 0;
 
+ALTER TABLE Students
+ADD warnings INT DEFAULT 0;
+---------------------------------- manageAccounts: 
+CREATE TABLE ManageAccounts (
+    account_id INT PRIMARY KEY IDENTITY(1,1),
+    user_id INT NOT NULL,
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+
+    CONSTRAINT FK_ManageAccounts_User FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE CASCADE
+);
+ALTER TABLE Users
+ADD username VARCHAR(100) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL;
+
+
 
