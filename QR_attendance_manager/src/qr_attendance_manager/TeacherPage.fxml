@@ -11,39 +11,39 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qr_attendance_manager.TeacherPageController">
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="641.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qr_attendance_manager.TeacherPageController">
     <stylesheets>
         <URL value="@teacherpage.css" />
     </stylesheets>
    <children>
       <GridPane layoutX="14.0" layoutY="55.0" prefHeight="118.0" prefWidth="251.0" vgap="2.0" AnchorPane.bottomAnchor="227.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="335.0" AnchorPane.topAnchor="55.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.39998779296874" minWidth="10.0" prefWidth="99.19998779296876" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.80001220703124" minWidth="10.0" prefWidth="151.80001220703124" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.2" minWidth="10.0" prefWidth="171.99998779296874" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.80001220703124" minWidth="10.0" prefWidth="111.20001220703125" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints maxHeight="29.599981689453124" minHeight="10.0" prefHeight="28.799993896484374" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="37.6000244140625" minHeight="10.0" prefHeight="29.599999999999998" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="29.6" minHeight="10.0" prefHeight="29.6" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.8" minHeight="10.0" prefHeight="40.8" vgrow="SOMETIMES" />
           <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <Label text="Teacher's Status :" GridPane.rowIndex="1" />
-            <Label text="Name is              :" />
+            <Label prefHeight="24.0" prefWidth="149.0" text="Name is              :" />
             <Label GridPane.columnIndex="1" />
             <Label GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="Your QRCode    :" GridPane.rowIndex="2" />
             <Label GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
-      <Label layoutX="180.0" layoutY="14.0" text=" Teacher Dashboard">
+      <Label layoutX="180.0" layoutY="14.0" text=" Teacher Dashboard" textFill="#fff7f7e5">
          <font>
             <Font name="System Bold Italic" size="23.0" />
          </font>
       </Label>
-      <GridPane layoutX="299.0" layoutY="55.0" prefHeight="106.0" prefWidth="268.0">
+      <GridPane layoutX="342.0" layoutY="55.0" prefHeight="126.0" prefWidth="268.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.20001220703125" minWidth="10.0" prefWidth="118.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.199951171875" minWidth="10.0" prefWidth="150.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.4" minWidth="10.0" prefWidth="156.79996337890626" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.199951171875" minWidth="10.0" prefWidth="112.00003662109376" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -55,17 +55,17 @@
             <Label text=" Date               :" GridPane.rowIndex="2" />
             <Label GridPane.columnIndex="1" />
             <Label GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label text="National ID      :" />
+            <Label prefHeight="24.0" prefWidth="148.0" text="National ID      :" />
             <Label GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
-      <TreeTableView layoutX="12.0" layoutY="177.0" prefHeight="175.0" prefWidth="574.0">
+      <TreeTableView layoutX="7.0" layoutY="202.0" prefHeight="222.0" prefWidth="577.0">
         <columns>
           <TreeTableColumn prefWidth="177.59997272491455" text="Username" />
           <TreeTableColumn prefWidth="244.00001525878906" text="Name" />
-            <TreeTableColumn prefWidth="152.800048828125" text="Status" />
+            <TreeTableColumn prefWidth="150.39998779296877" text="Status" />
         </columns>
       </TreeTableView>
-      <Button layoutX="504.0" layoutY="360.0" mnemonicParsing="false" text="Send Report" />
+      <Button layoutX="490.0" layoutY="440.0" minHeight="24.0" minWidth="96.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="96.0" text="Send Report" textFill="#0f056b" />
    </children>
 </AnchorPane>

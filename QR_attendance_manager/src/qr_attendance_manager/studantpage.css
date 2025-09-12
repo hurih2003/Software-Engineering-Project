@@ -1,7 +1,105 @@
-/*
- * Empty Stylesheet file.
- */
 
+/* style.css */
+
+/* الخلفية العامة للواجهة */
 .mainFxmlClass {
+    -fx-background-color: white;  /* خلفية بيضاء */
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-border-color: #0f056b;    /* إطار أزرق داكن */
+    -fx-border-width: 4px; 
+    -fx-border-radius: 15px; 
+    -fx-background-radius: 15px; 
+    -fx-border-style: solid;
+    -fx-effect: dropshadow(gaussian, rgba(65,120,214,0.5), 10, 0.7, 0, 0);
+    -fx-padding: 25px 35px;
+}
 
+/* نصوص العناوين */
+.label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #204e96;  /* أزرق متوسط */
+    -fx-effect: dropshadow(gaussian, rgba(32,78,150,0.18), 2,0,0,2);
+}
+
+/* تنسيق للعنصر label ليتوافق مع العناصر المتناوبة */
+.label:odd {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333b4f;
+    -fx-font-weight: bold;
+}
+
+/* حقول النصوص والمركبات */
+.text-field,
+.combo-box,
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #7fa4e6;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+    -fx-font-size: 15px;
+    -fx-padding: 8 14 8 14;
+    -fx-text-fill: #2d3a4b;
+}
+
+/* تنسيق جدول البيانات */
+.tree-table-view {
+    -fx-background-color: #f8fafd;
+    -fx-border-color: #7fa4e6;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 4 4 4 4;
+    -fx-table-cell-border-color: #b9d3f5;
+    -fx-font-size: 16px;
+}
+
+/* رأس الجدول */
+.tree-table-view .column-header-background {
+    -fx-background-color: #e4eeff;
+    -fx-background-radius: 10 10 0 0;
+}
+
+/* صفوف الجدول */
+.tree-table-view .tree-table-row-cell {
+    -fx-background-color: #f8fafd;
+}
+
+/* خلايا الجدول */
+.tree-table-view .tree-table-cell {
+    -fx-font-weight: bold;
+    -fx-padding: 10 10 10 10;
+}
+
+/* نص placeholder للجدول */
+.tree-table-view .placeholder .label {
+    -fx-font-size: 22px;
+    -fx-text-fill: #204e96;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(32,78,150,0.15), 2,0,0,3);
+}
+
+/* تنسيق الأزرار */
+.button {
+    -fx-background-color: #468cef;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 8 0 8 0;
+    -fx-effect: dropshadow(gaussian, rgba(70,140,239,0.15), 6,0,0,2);
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-min-width: 120px;
+    -fx-min-height: 38px;
+    -fx-max-width: 160px;
+    -fx-transition: background-color 0.2s;
+    -fx-spacing: 6;
+}
+
+/* تأثيرات hover و press للأزرار */
+.button:pressed,
+.button:hover {
+    -fx-background-color: #2366c8;
 }

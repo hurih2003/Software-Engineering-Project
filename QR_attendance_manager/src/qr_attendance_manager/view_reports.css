@@ -78,3 +78,12 @@
 .tree-table-view .scroll-bar:vertical {
     -fx-background-color: transparent;
 }
+.mainFxmlClass {
+    -fx-border-color: #0f056b;
+    -fx-border-width: 4px; 
+    -fx-border-radius: 15px; 
+    -fx-background-radius: 15px; 
+    -fx-border-style: solid;
+
+    -fx-effect: dropshadow(gaussian, rgba(65,120,214,0.5), 10, 0.7, 0, 0);
+}
