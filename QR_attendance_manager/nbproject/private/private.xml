@@ -3,16 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/TeacherPage.fxml</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/ScanCamra/Utils.java</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/warnings.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/ScanCamra/scancamera.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/LoginPage.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/view_reports.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/AdminPageController.java</file>
             <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/adminpage.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/TeacherPage.fxml</file>
             <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/manage_accounts.css</file>
             <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/manage_qr.css</file>
             <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/teacherpage.css</file>
-            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/warnings.css</file>
-            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/LoginPage.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/ScanCamra/ScanCamera.fxml</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/ScanCamra/buttonopencamra.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/ScanCamra/ScanCameraController.java</file>
             <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/studantpage.css</file>
-            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/StudantPage.fxml</file>
-            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/qr_attendance_manager/view_reports.css</file>
+            <file>file:/C:/Users/pc/Downloads/Software-Engineering-Project/QR_attendance_manager/src/ScanCamra/ButtonOpenCamra.fxml</file>
         </group>
     </open-files>
 </project-private>
